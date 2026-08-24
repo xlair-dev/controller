@@ -1,9 +1,5 @@
 (fp_lib_table
-  (lib
-    (name "Seeed_Studio_XIAO_Series")
-    (type "KiCad")
-    (uri "${KIPRJMOD}/../kicad-lib/footprints/Seeed_Studio_XIAO_Series.pretty")
-    (options "")
-    (descr "")
-  )
+	(version 7)
+	(lib (name "Seeed_Studio_XIAO_Series") (type "KiCad") (uri "${KIPRJMOD}/../kicad-lib/footprints/Seeed_Studio_XIAO_Series.pretty") (options "") (descr ""))
+	(lib (name "v1_common") (type "KiCad") (uri "${KIPRJMOD}/../kicad-lib/footprints/v1_common.pretty") (options "") (descr ""))
 )
