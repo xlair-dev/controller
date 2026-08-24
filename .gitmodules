@@ -1,0 +1,3 @@
+[submodule "v1/kicad-lib/third_party/seeed-opl"]
+	path = v1/kicad-lib/third_party/seeed-opl
+	url = https://github.com/Seeed-Studio/OPL_Kicad_Library.git
