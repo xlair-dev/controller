@@ -645,13 +645,18 @@
       {
         "filename": "v1_unified.kicad_sch",
         "name": "v1_unified",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "d245cebb-d44d-4e14-b761-281e3f34708c"
       }
     ],
-    "used_designators": "",
+    "used_designators": "C1-12,#PWR1-21,J1-16,R1-48,E1-48,U1-4",
     "variants": []
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "d245cebb-d44d-4e14-b761-281e3f34708c",
+      "v1_unified"
+    ]
+  ],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {
