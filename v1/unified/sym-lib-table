@@ -1,9 +1,5 @@
 (sym_lib_table
-  (lib
-    (name "Seeed_XIAO")
-    (type "KiCad")
-    (uri "${KIPRJMOD}/../kicad-lib/third_party/seeed-opl/Seeed Studio XIAO Series Library/Seeed_Studio_XIAO_Series.kicad_sym")
-    (options "")
-    (descr "")
-  )
+	(version 7)
+	(lib (name "Seeed_XIAO") (type "KiCad") (uri "${KIPRJMOD}/../kicad-lib/third_party/seeed-opl/Seeed Studio XIAO Series Library/Seeed_Studio_XIAO_Series.kicad_sym") (options "") (descr ""))
+	(lib (name "v1_common") (type "KiCad") (uri "${KIPRJMOD}/../kicad-lib/symbols/v1_common.kicad_sym") (options "") (descr ""))
 )
