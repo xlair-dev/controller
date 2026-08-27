@@ -10887,7 +10887,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "33576470-aed4-4877-b894-d6fee0486443")
-		(property "Reference" "U3"
+		(property "Reference" "U2"
 			(at 94.6719 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11020,7 +11020,7 @@
 		(instances
 			(project "v1_unified"
 				(path "/d245cebb-d44d-4e14-b761-281e3f34708c"
-					(reference "U3")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -13631,7 +13631,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "66d630d3-b7a2-44eb-83ee-2038755733d0")
-		(property "Reference" "U1"
+		(property "Reference" "U3"
 			(at 252.73 59.8168 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13702,7 +13702,7 @@
 		(instances
 			(project "v1_unified"
 				(path "/d245cebb-d44d-4e14-b761-281e3f34708c"
-					(reference "U1")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -16317,7 +16317,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8d29a14e-c22b-4203-b8d3-62b48a95e4a3")
-		(property "Reference" "U2"
+		(property "Reference" "U1"
 			(at 94.6719 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16450,7 +16450,7 @@
 		(instances
 			(project "v1_unified"
 				(path "/d245cebb-d44d-4e14-b761-281e3f34708c"
-					(reference "U2")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -19232,7 +19232,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c9bbb9a8-e776-463c-a6e9-48b73555c2a8")
-		(property "Reference" "C58"
+		(property "Reference" "C9"
 			(at 249.174 76.708 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19296,7 +19296,7 @@
 		(instances
 			(project "v1_unified"
 				(path "/d245cebb-d44d-4e14-b761-281e3f34708c"
-					(reference "C58")
+					(reference "C9")
 					(unit 1)
 				)
 			)

@@ -1340,7 +1340,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 105.41) (xy 97.79 105.41)
+			(xy 90.17 105.41) (xy 97.79 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1420,7 +1420,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 100.33) (xy 97.79 100.33)
+			(xy 90.17 100.33) (xy 97.79 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1490,7 +1490,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 102.87) (xy 97.79 102.87)
+			(xy 90.17 102.87) (xy 97.79 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1560,7 +1560,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 110.49) (xy 97.79 110.49)
+			(xy 90.17 110.49) (xy 97.79 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1660,7 +1660,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 95.25) (xy 97.79 95.25)
+			(xy 90.17 95.25) (xy 97.79 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1700,7 +1700,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 107.95) (xy 97.79 107.95)
+			(xy 90.17 107.95) (xy 97.79 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1790,7 +1790,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 97.79) (xy 97.79 97.79)
+			(xy 90.17 97.79) (xy 97.79 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1810,13 +1810,23 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 92.71) (xy 97.79 92.71)
+			(xy 90.17 92.71) (xy 97.79 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e9f18d24-5d7c-4159-82fc-b3fa0a830273")
+	)
+	(label "CAP6"
+		(at 91.44 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "320f209b-3dbc-4540-a38c-07d5b27a7143")
 	)
 	(label "TOUCH_PWR"
 		(at 120.65 60.96 0)
@@ -1838,6 +1848,26 @@
 		)
 		(uuid "5fdb354f-f9da-4631-96fe-55751df612fa")
 	)
+	(label "CAP2"
+		(at 91.44 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "667eccf7-039f-4547-a8a6-c48ba5838f88")
+	)
+	(label "CAP7"
+		(at 91.44 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "982f28ee-55bb-4d86-8ed3-1baf3e4251a2")
+	)
 	(label "TOUCH_PWR"
 		(at 213.36 104.14 0)
 		(effects
@@ -1847,6 +1877,56 @@
 			(justify left bottom)
 		)
 		(uuid "9a00d0fc-fbeb-48cd-8fd4-96c2db170f9f")
+	)
+	(label "CAP5"
+		(at 91.44 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a356ab6f-b13c-4373-a46b-d6f2780aa142")
+	)
+	(label "CAP1"
+		(at 91.44 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aebe549c-7507-4f14-997f-1a469e8c302b")
+	)
+	(label "CAP8"
+		(at 91.44 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b6f3fe67-6f75-40cf-9759-e61c2625891f")
+	)
+	(label "CAP4"
+		(at 91.44 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "caf67253-f91f-4868-94aa-1d12c75cf139")
+	)
+	(label "CAP3"
+		(at 91.44 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dc888008-acfc-4dfc-afdd-75a5950d5833")
 	)
 	(label "TOUCH_PWR"
 		(at 118.11 58.42 0)
@@ -1901,7 +1981,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.8x1.8mm"
+		(property "Footprint" "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm"
 			(at 120.65 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -2073,7 +2153,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
-		(at 90.17 102.87 180)
+		(at 85.09 102.87 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2083,7 +2163,7 @@
 		(dnp no)
 		(uuid "1304597d-f127-4893-a946-51ca0c8af0c2")
 		(property "Reference" "E5"
-			(at 87.376 102.87 0)
+			(at 82.296 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2093,7 +2173,7 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at 78.994 102.87 0)
+			(at 73.914 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2102,8 +2182,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 90.17 102.87 0)
+		(property "Footprint" "v1_common:TouchPad"
+			(at 85.09 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2114,7 +2194,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 102.87 0)
+			(at 85.09 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2125,7 +2205,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 90.17 102.87 0)
+			(at 85.09 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2149,7 +2229,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
-		(at 90.17 100.33 180)
+		(at 85.09 100.33 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2159,7 +2239,7 @@
 		(dnp no)
 		(uuid "191fcbc5-575d-44ef-8fe7-8c8db15f0aae")
 		(property "Reference" "E4"
-			(at 87.376 100.33 0)
+			(at 82.296 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2169,7 +2249,7 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at 78.994 100.33 0)
+			(at 73.914 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2178,8 +2258,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 90.17 100.33 0)
+		(property "Footprint" "v1_common:TouchPad"
+			(at 85.09 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2190,7 +2270,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 100.33 0)
+			(at 85.09 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2201,7 +2281,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 90.17 100.33 0)
+			(at 85.09 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2471,7 +2551,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
-		(at 90.17 105.41 180)
+		(at 85.09 105.41 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2481,7 +2561,7 @@
 		(dnp no)
 		(uuid "2944ef68-51b4-4d18-a3ca-0f7a04235b63")
 		(property "Reference" "E6"
-			(at 87.376 105.41 0)
+			(at 82.296 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2491,7 +2571,7 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at 78.994 105.41 0)
+			(at 73.914 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2500,8 +2580,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 90.17 105.41 0)
+		(property "Footprint" "v1_common:TouchPad"
+			(at 85.09 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2512,7 +2592,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 105.41 0)
+			(at 85.09 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2523,7 +2603,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 90.17 105.41 0)
+			(at 85.09 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2973,7 +3053,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 163.322 80.01 90)
 			(hide yes)
 			(show_name no)
@@ -3032,7 +3112,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "50afbc57-0cf1-4947-804f-aba3adb3ef23")
-		(property "Reference" "C6"
+		(property "Reference" "C5"
 			(at 99.822 74.168 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3043,7 +3123,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "0.1uF"
 			(at 108.204 78.486 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3096,7 +3176,7 @@
 		(instances
 			(project "v1_slider"
 				(path "/aa48af00-36c0-4530-9d6c-229f406ad2f1"
-					(reference "C6")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -3181,7 +3261,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
-		(at 90.17 95.25 180)
+		(at 85.09 95.25 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3191,7 +3271,7 @@
 		(dnp no)
 		(uuid "62798853-d019-4575-a0e0-166a04200f98")
 		(property "Reference" "E2"
-			(at 87.376 95.25 0)
+			(at 82.296 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3201,7 +3281,7 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at 78.994 95.25 0)
+			(at 73.914 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3210,8 +3290,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 90.17 95.25 0)
+		(property "Footprint" "v1_common:TouchPad"
+			(at 85.09 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3222,7 +3302,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 95.25 0)
+			(at 85.09 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3233,7 +3313,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 90.17 95.25 0)
+			(at 85.09 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3415,7 +3495,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
-		(at 90.17 110.49 180)
+		(at 85.09 110.49 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3425,7 +3505,7 @@
 		(dnp no)
 		(uuid "7b5ee3c8-f725-4d70-939e-03cfdc147c68")
 		(property "Reference" "E8"
-			(at 87.376 110.49 0)
+			(at 82.296 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3435,7 +3515,7 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at 78.994 110.49 0)
+			(at 73.914 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3444,8 +3524,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 90.17 110.49 0)
+		(property "Footprint" "v1_common:TouchPad"
+			(at 85.09 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3456,7 +3536,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 110.49 0)
+			(at 85.09 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3467,7 +3547,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 90.17 110.49 0)
+			(at 85.09 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3570,7 +3650,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
-		(at 90.17 92.71 180)
+		(at 85.09 92.71 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3580,7 +3660,7 @@
 		(dnp no)
 		(uuid "8f119483-b5c5-447f-87ee-8df6af78a404")
 		(property "Reference" "E1"
-			(at 87.376 92.71 0)
+			(at 82.296 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3590,7 +3670,7 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at 78.994 92.71 0)
+			(at 73.914 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3599,8 +3679,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 90.17 92.71 0)
+		(property "Footprint" "v1_common:TouchPad"
+			(at 85.09 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3611,7 +3691,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 92.71 0)
+			(at 85.09 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3622,7 +3702,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 90.17 92.71 0)
+			(at 85.09 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3956,7 +4036,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
-		(at 90.17 97.79 180)
+		(at 85.09 97.79 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3966,7 +4046,7 @@
 		(dnp no)
 		(uuid "aff3516d-7182-4f13-8201-ac5f790c37f6")
 		(property "Reference" "E3"
-			(at 87.376 97.79 0)
+			(at 82.296 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3976,7 +4056,7 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at 78.994 97.79 0)
+			(at 73.914 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3985,8 +4065,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 90.17 97.79 0)
+		(property "Footprint" "v1_common:TouchPad"
+			(at 85.09 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3997,7 +4077,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 97.79 0)
+			(at 85.09 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4008,7 +4088,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 90.17 97.79 0)
+			(at 85.09 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4063,7 +4143,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 165.862 80.01 90)
 			(hide yes)
 			(show_name no)
@@ -4278,7 +4358,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bd550389-445f-49d8-a5e0-9c9a8825027c")
-		(property "Reference" "C5"
+		(property "Reference" "C6"
 			(at 108.204 74.168 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4289,7 +4369,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "1uF"
 			(at 97.282 78.486 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4342,7 +4422,7 @@
 		(instances
 			(project "v1_slider"
 				(path "/aa48af00-36c0-4530-9d6c-229f406ad2f1"
-					(reference "C5")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -4350,7 +4430,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
-		(at 90.17 107.95 180)
+		(at 85.09 107.95 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4360,7 +4440,7 @@
 		(dnp no)
 		(uuid "c4d3baf0-05aa-4d45-a4e1-17276f0023af")
 		(property "Reference" "E7"
-			(at 87.376 107.95 0)
+			(at 82.296 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4370,7 +4450,7 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at 78.994 107.95 0)
+			(at 73.914 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4379,8 +4459,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 90.17 107.95 0)
+		(property "Footprint" "v1_common:TouchPad"
+			(at 85.09 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4391,7 +4471,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 107.95 0)
+			(at 85.09 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4402,7 +4482,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 90.17 107.95 0)
+			(at 85.09 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
