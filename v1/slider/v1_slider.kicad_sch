@@ -1818,7 +1818,7 @@
 		)
 		(uuid "e9f18d24-5d7c-4159-82fc-b3fa0a830273")
 	)
-	(label "CAP6"
+	(label "CAP5"
 		(at 91.44 105.41 0)
 		(effects
 			(font
@@ -1848,7 +1848,7 @@
 		)
 		(uuid "5fdb354f-f9da-4631-96fe-55751df612fa")
 	)
-	(label "CAP2"
+	(label "CAP1"
 		(at 91.44 95.25 0)
 		(effects
 			(font
@@ -1858,7 +1858,7 @@
 		)
 		(uuid "667eccf7-039f-4547-a8a6-c48ba5838f88")
 	)
-	(label "CAP7"
+	(label "CAP6"
 		(at 91.44 107.95 0)
 		(effects
 			(font
@@ -1878,7 +1878,7 @@
 		)
 		(uuid "9a00d0fc-fbeb-48cd-8fd4-96c2db170f9f")
 	)
-	(label "CAP5"
+	(label "CAP4"
 		(at 91.44 102.87 0)
 		(effects
 			(font
@@ -1888,7 +1888,7 @@
 		)
 		(uuid "a356ab6f-b13c-4373-a46b-d6f2780aa142")
 	)
-	(label "CAP1"
+	(label "CAP0"
 		(at 91.44 92.71 0)
 		(effects
 			(font
@@ -1898,7 +1898,7 @@
 		)
 		(uuid "aebe549c-7507-4f14-997f-1a469e8c302b")
 	)
-	(label "CAP8"
+	(label "CAP7"
 		(at 91.44 110.49 0)
 		(effects
 			(font
@@ -1908,7 +1908,7 @@
 		)
 		(uuid "b6f3fe67-6f75-40cf-9759-e61c2625891f")
 	)
-	(label "CAP4"
+	(label "CAP3"
 		(at 91.44 100.33 0)
 		(effects
 			(font
@@ -1918,7 +1918,7 @@
 		)
 		(uuid "caf67253-f91f-4868-94aa-1d12c75cf139")
 	)
-	(label "CAP3"
+	(label "CAP2"
 		(at 91.44 97.79 0)
 		(effects
 			(font
