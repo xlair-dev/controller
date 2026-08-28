@@ -198,7 +198,7 @@
 				(pins "1" "2" "3" "4")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -2.85 -2.75)
@@ -507,7 +507,7 @@
 				(pins)
 			)
 		)
-		(attr exclude_from_bom)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -615,7 +615,7 @@
 				(pins "1")
 			)
 		)
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 0)
@@ -706,7 +706,7 @@
 				(pins "1")
 			)
 		)
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 0)
@@ -796,7 +796,7 @@
 				(pins "1")
 			)
 		)
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 0)
@@ -895,7 +895,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 1.04 0)
@@ -1078,7 +1078,7 @@
 				(pins "1")
 			)
 		)
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 0)
@@ -1168,7 +1168,7 @@
 				(pins "1")
 			)
 		)
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 0)
@@ -1258,7 +1258,7 @@
 				(pins "1")
 			)
 		)
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 0)
@@ -1348,7 +1348,7 @@
 				(pins "1")
 			)
 		)
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 0)
@@ -1446,7 +1446,7 @@
 				(pins)
 			)
 		)
-		(attr exclude_from_bom)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -1562,7 +1562,7 @@
 				(pins)
 			)
 		)
-		(attr exclude_from_bom)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -1678,7 +1678,7 @@
 				(pins)
 			)
 		)
-		(attr exclude_from_bom)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -1795,7 +1795,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 1.04 0)
@@ -1978,7 +1978,7 @@
 				(pins "1")
 			)
 		)
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 0)
@@ -5263,6 +5263,18 @@
 		(layer "Edge.Cuts")
 		(uuid "020d6790-a459-4530-9413-e0b1429908b9")
 	)
+	(gr_text "PWR SDA SCL GND"
+		(at 83.5 44.5 0)
+		(layer "F.SilkS")
+		(uuid "7c3df9ac-88f3-47e2-9a23-77fb7accd513")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "v1_slider"
 		(at 140 58.5 0)
 		(layer "F.SilkS")
@@ -5940,14 +5952,6 @@
 		(layer "B.Cu")
 		(net "/CAP5")
 		(uuid "68425df8-a3da-40b2-9517-3be0db69e7ec")
-	)
-	(segment
-		(start 56.5 71.5)
-		(end 45 83)
-		(width 0.2)
-		(layer "F.Cu")
-		(net "/CAP0")
-		(uuid "6204573e-d902-4fe2-92de-cd25a8c049c1")
 	)
 	(via
 		(at 56.5 61)
