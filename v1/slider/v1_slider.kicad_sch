@@ -1340,16 +1340,6 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 105.41) (xy 97.79 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a3b72d0-b27f-48d4-a8f1-35c9d57a617f")
-	)
-	(wire
-		(pts
 			(xy 152.4 88.9) (xy 152.4 85.09)
 		)
 		(stroke
@@ -1400,6 +1390,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 110.49) (xy 97.79 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23e97ee0-ffea-4ca5-9da9-bd570e7eebed")
+	)
+	(wire
+		(pts
 			(xy 187.96 102.87) (xy 187.96 104.14)
 		)
 		(stroke
@@ -1420,16 +1420,6 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 100.33) (xy 97.79 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2857fbfb-313c-4f53-b8bf-0b29cecadd5b")
-	)
-	(wire
-		(pts
 			(xy 120.65 60.96) (xy 120.65 72.39)
 		)
 		(stroke
@@ -1440,6 +1430,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 105.41) (xy 97.79 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e99ffbd-a846-414f-b126-fd2023108194")
+	)
+	(wire
+		(pts
 			(xy 165.1 74.93) (xy 165.1 76.2)
 		)
 		(stroke
@@ -1447,6 +1447,16 @@
 			(type default)
 		)
 		(uuid "317b3dd7-66c6-4608-991b-987c1472a3c0")
+	)
+	(wire
+		(pts
+			(xy 90.17 107.95) (xy 97.79 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36e2f162-a8df-421f-aed8-8d09961615c3")
 	)
 	(wire
 		(pts
@@ -1487,16 +1497,6 @@
 			(type default)
 		)
 		(uuid "4cc732e6-8581-4400-853f-d66cdc760c94")
-	)
-	(wire
-		(pts
-			(xy 90.17 102.87) (xy 97.79 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d0d60c3-e1bc-4cbd-8948-10174df98709")
 	)
 	(wire
 		(pts
@@ -1560,16 +1560,6 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 110.49) (xy 97.79 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5af5d52e-34ba-46f8-b01f-b3ac79d42a6b")
-	)
-	(wire
-		(pts
 			(xy 143.51 100.33) (xy 167.64 100.33)
 		)
 		(stroke
@@ -1597,6 +1587,16 @@
 			(type default)
 		)
 		(uuid "6cd4b0f4-7ea4-4016-9f65-b637acb9279f")
+	)
+	(wire
+		(pts
+			(xy 90.17 100.33) (xy 97.79 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b577217-eaf1-4e4a-80a5-9de13423bdc7")
 	)
 	(wire
 		(pts
@@ -1660,16 +1660,6 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 95.25) (xy 97.79 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9185f409-0daa-4fc6-9c49-98283fc7c918")
-	)
-	(wire
-		(pts
 			(xy 107.95 72.39) (xy 118.11 72.39)
 		)
 		(stroke
@@ -1697,16 +1687,6 @@
 			(type default)
 		)
 		(uuid "afd1e68a-5ba4-4e2f-b72f-34e60977e2e2")
-	)
-	(wire
-		(pts
-			(xy 90.17 107.95) (xy 97.79 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b83f90c6-cb1f-49db-a6c1-158fbd3fe4df")
 	)
 	(wire
 		(pts
@@ -1740,6 +1720,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 97.79) (xy 97.79 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c177e734-6cff-4e4e-869c-425004b004ec")
+	)
+	(wire
+		(pts
 			(xy 228.6 95.25) (xy 228.6 101.6)
 		)
 		(stroke
@@ -1770,6 +1760,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 92.71) (xy 97.79 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c88cf5c2-c181-4311-af26-bc46eb156ebc")
+	)
+	(wire
+		(pts
 			(xy 167.64 100.33) (xy 190.5 100.33)
 		)
 		(stroke
@@ -1777,6 +1777,16 @@
 			(type default)
 		)
 		(uuid "d17bdb5d-4d41-4836-adee-8262979cc996")
+	)
+	(wire
+		(pts
+			(xy 90.17 95.25) (xy 97.79 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d998031c-616e-427e-9cca-f71ac00d0db4")
 	)
 	(wire
 		(pts
@@ -1790,13 +1800,13 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 97.79) (xy 97.79 97.79)
+			(xy 90.17 102.87) (xy 97.79 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e4d77426-c4be-4ccd-9211-78075b437967")
+		(uuid "df1eb2d4-37ff-481f-a87e-8cc0464f578e")
 	)
 	(wire
 		(pts
@@ -1807,16 +1817,6 @@
 			(type default)
 		)
 		(uuid "e4eb029f-adde-4271-b5d7-80c6be3bbd3a")
-	)
-	(wire
-		(pts
-			(xy 90.17 92.71) (xy 97.79 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e9f18d24-5d7c-4159-82fc-b3fa0a830273")
 	)
 	(label "CAP5"
 		(at 91.44 105.41 0)
@@ -1849,7 +1849,7 @@
 		(uuid "5fdb354f-f9da-4631-96fe-55751df612fa")
 	)
 	(label "CAP1"
-		(at 91.44 95.25 0)
+		(at 91.44 97.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1859,7 +1859,7 @@
 		(uuid "667eccf7-039f-4547-a8a6-c48ba5838f88")
 	)
 	(label "CAP6"
-		(at 91.44 107.95 0)
+		(at 91.44 92.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1889,7 +1889,7 @@
 		(uuid "a356ab6f-b13c-4373-a46b-d6f2780aa142")
 	)
 	(label "CAP0"
-		(at 91.44 92.71 0)
+		(at 91.44 100.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1899,7 +1899,7 @@
 		(uuid "aebe549c-7507-4f14-997f-1a469e8c302b")
 	)
 	(label "CAP7"
-		(at 91.44 110.49 0)
+		(at 91.44 95.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1909,7 +1909,7 @@
 		(uuid "b6f3fe67-6f75-40cf-9759-e61c2625891f")
 	)
 	(label "CAP3"
-		(at 91.44 100.33 0)
+		(at 91.44 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1919,7 +1919,7 @@
 		(uuid "caf67253-f91f-4868-94aa-1d12c75cf139")
 	)
 	(label "CAP2"
-		(at 91.44 97.79 0)
+		(at 91.44 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2229,7 +2229,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
-		(at 85.09 100.33 180)
+		(at 85.09 107.95 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2239,7 +2239,7 @@
 		(dnp no)
 		(uuid "191fcbc5-575d-44ef-8fe7-8c8db15f0aae")
 		(property "Reference" "E4"
-			(at 82.296 100.33 0)
+			(at 82.296 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2249,7 +2249,7 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at 73.914 100.33 0)
+			(at 73.914 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2259,7 +2259,7 @@
 			)
 		)
 		(property "Footprint" "v1_common:TouchPad"
-			(at 85.09 100.33 0)
+			(at 85.09 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2270,7 +2270,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 100.33 0)
+			(at 85.09 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2281,7 +2281,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 85.09 100.33 0)
+			(at 85.09 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3261,7 +3261,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
-		(at 85.09 95.25 180)
+		(at 85.09 97.79 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3271,7 +3271,7 @@
 		(dnp no)
 		(uuid "62798853-d019-4575-a0e0-166a04200f98")
 		(property "Reference" "E2"
-			(at 82.296 95.25 0)
+			(at 82.296 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3281,7 +3281,7 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at 73.914 95.25 0)
+			(at 73.914 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3291,7 +3291,7 @@
 			)
 		)
 		(property "Footprint" "v1_common:TouchPad"
-			(at 85.09 95.25 0)
+			(at 85.09 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3302,7 +3302,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 95.25 0)
+			(at 85.09 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3313,7 +3313,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 85.09 95.25 0)
+			(at 85.09 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3495,7 +3495,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
-		(at 85.09 110.49 180)
+		(at 85.09 95.25 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3505,7 +3505,7 @@
 		(dnp no)
 		(uuid "7b5ee3c8-f725-4d70-939e-03cfdc147c68")
 		(property "Reference" "E8"
-			(at 82.296 110.49 0)
+			(at 82.296 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3515,7 +3515,7 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at 73.914 110.49 0)
+			(at 73.914 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3525,7 +3525,7 @@
 			)
 		)
 		(property "Footprint" "v1_common:TouchPad"
-			(at 85.09 110.49 0)
+			(at 85.09 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3536,7 +3536,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 110.49 0)
+			(at 85.09 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3547,7 +3547,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 85.09 110.49 0)
+			(at 85.09 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3650,7 +3650,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
-		(at 85.09 92.71 180)
+		(at 85.09 100.33 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3660,7 +3660,7 @@
 		(dnp no)
 		(uuid "8f119483-b5c5-447f-87ee-8df6af78a404")
 		(property "Reference" "E1"
-			(at 82.296 92.71 0)
+			(at 82.296 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3670,7 +3670,7 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at 73.914 92.71 0)
+			(at 73.914 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3680,7 +3680,7 @@
 			)
 		)
 		(property "Footprint" "v1_common:TouchPad"
-			(at 85.09 92.71 0)
+			(at 85.09 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3691,7 +3691,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 92.71 0)
+			(at 85.09 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3702,7 +3702,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 85.09 92.71 0)
+			(at 85.09 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4036,7 +4036,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
-		(at 85.09 97.79 180)
+		(at 85.09 110.49 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4046,7 +4046,7 @@
 		(dnp no)
 		(uuid "aff3516d-7182-4f13-8201-ac5f790c37f6")
 		(property "Reference" "E3"
-			(at 82.296 97.79 0)
+			(at 82.296 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4056,7 +4056,7 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at 73.914 97.79 0)
+			(at 73.914 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4066,7 +4066,7 @@
 			)
 		)
 		(property "Footprint" "v1_common:TouchPad"
-			(at 85.09 97.79 0)
+			(at 85.09 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4077,7 +4077,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 97.79 0)
+			(at 85.09 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4088,7 +4088,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 85.09 97.79 0)
+			(at 85.09 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4430,7 +4430,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
-		(at 85.09 107.95 180)
+		(at 85.09 92.71 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4440,7 +4440,7 @@
 		(dnp no)
 		(uuid "c4d3baf0-05aa-4d45-a4e1-17276f0023af")
 		(property "Reference" "E7"
-			(at 82.296 107.95 0)
+			(at 82.296 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4450,7 +4450,7 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at 73.914 107.95 0)
+			(at 73.914 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4460,7 +4460,7 @@
 			)
 		)
 		(property "Footprint" "v1_common:TouchPad"
-			(at 85.09 107.95 0)
+			(at 85.09 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4471,7 +4471,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 107.95 0)
+			(at 85.09 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4482,7 +4482,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 85.09 107.95 0)
+			(at 85.09 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

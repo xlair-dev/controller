@@ -547,11 +547,11 @@
     "netclass_patterns": [
       {
         "netclass": "CAPSENSE",
-        "pattern": "CAP*"
+        "pattern": "/CAP*"
       },
       {
         "netclass": "POWER",
-        "pattern": "TOUCH_PWR"
+        "pattern": "/TOUCH_PWR"
       }
     ]
   },
