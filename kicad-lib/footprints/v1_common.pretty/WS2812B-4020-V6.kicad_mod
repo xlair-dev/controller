@@ -280,7 +280,7 @@
 		(uuid "cd419ea5-a1b6-4982-96a2-3d80bef6ca53")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/../kicad-lib/3dmodels/WS2812B-4020.step"
+	(model "${KIPRJMOD}/../../kicad-lib/3dmodels/WS2812B-4020.step"
 		(offset
 			(xyz 0 -1 0)
 		)
