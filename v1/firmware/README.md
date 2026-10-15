@@ -12,3 +12,11 @@
 ```
 zig build run-setup
 ```
+
+## Firmware
+
+```
+zig build run
+```
+
+see: [PROTOCOL.md](./PROTOCOL.md)
