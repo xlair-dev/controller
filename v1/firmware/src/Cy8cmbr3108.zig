@@ -8,6 +8,18 @@ pub fn init(address: u7, sleep_ms: *const fn (u32) void) Self {
     return .{ .address = address, .sleep_ms = sleep_ms };
 }
 
+/// Read all eight difference counts in one transaction for the runtime loop.
+pub fn readDifferenceCounts(address: u7) hal.i2c.Error![8]u8 {
+    const start = [1]u8{reg.difference_count_sensor0};
+    var registers: [16]u8 = undefined;
+    try i2c.write_then_read_blocking(@fromBackingInt(address), &start, &registers, .from_ms(2));
+
+    var counts: [8]u8 = undefined;
+    // Difference-count registers are two bytes apart; button counts use the low byte.
+    for (&counts, 0..) |*count, sensor| count.* = registers[2 * sensor];
+    return counts;
+}
+
 pub fn is3108(self: *Self) bool {
     if ((self.read8(reg.family_id) catch return false) != expected_family_id) return false;
 

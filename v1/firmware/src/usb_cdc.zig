@@ -41,6 +41,19 @@ pub fn Port(comptime config: usb.Config) type {
             return cdc.flush();
         }
 
+        /// Send one USB packet now, or drop it if the endpoint is busy.
+        pub fn trySendPacket(self: *Self, packet: []const u8) bool {
+            const cdc = self.activeCdc() orelse return false;
+            // MicroZig CDC exposes its single-packet TX state but has no try-send API.
+            if (packet.len == 0 or packet.len > cdc.tx_data.len) return false;
+            if (cdc.tx_end != 0 or !cdc.tx_ready.load(.seq_cst)) return false;
+            if (cdc.write(packet) != packet.len or !cdc.flush()) {
+                cdc.tx_end = 0;
+                return false;
+            }
+            return true;
+        }
+
         fn activeCdc(self: *Self) ?*usb.drivers.CDC {
             const drivers = self.controller.drivers() orelse return null;
             return &drivers.cdc;
