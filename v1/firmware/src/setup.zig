@@ -130,12 +130,13 @@ fn sleepMs(ms: u32) void {
 }
 
 // no register on an unknown device is modified.
-fn addressResponds(console_: *Console, addr: u7, attempts: usize) bool {
+fn addressResponds(console_: *Console, addr: u7) bool {
     var byte: [1]u8 = undefined;
-    for (0..attempts) |attempt| {
+    // The first address match may wake a sleeping CY8CMBR3108 but be NACKed.
+    for (0..5) |_| {
         console_.port.poll();
         i2c.read_blocking(@fromBackingInt(addr), &byte, .from_ms(25)) catch {
-            if (attempt + 1 < attempts) sleepPolling(console_, 5);
+            sleepPolling(console_, 5);
             continue;
         };
         return true;
@@ -151,7 +152,7 @@ fn isCy8cmbr3108(addr: u7) bool {
 fn changeAddress(port: *Console, from: u7, to: u7) !void {
     if (!isCy8cmbr3108(from)) return error.SourceNotCY8CMBR3108;
     if (from == to) return;
-    if (addressResponds(port, to, 3)) return error.DestinationInUse;
+    if (addressResponds(port, to)) return error.DestinationInUse;
 
     var device = Device.init(from, sleepMs);
     device.changeAddress(to) catch |err| {
@@ -183,7 +184,7 @@ const AddressSetupSession = struct {
         var any = false;
         for (0x08..0x78) |number| {
             const addr: u7 = @intCast(number);
-            if (!addressResponds(self.console, addr, 1)) continue;
+            if (!addressResponds(self.console, addr)) continue;
             if (any) try self.console.write(", ");
             try self.console.print("0x{X:0>2}", .{addr});
             any = true;

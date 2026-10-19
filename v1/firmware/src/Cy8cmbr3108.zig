@@ -1,3 +1,4 @@
+const std = @import("std");
 const Self = @This();
 
 address: u7,
@@ -8,15 +9,28 @@ pub fn init(address: u7, sleep_ms: *const fn (u32) void) Self {
     return .{ .address = address, .sleep_ms = sleep_ms };
 }
 
-/// Read all eight difference counts in one transaction for the runtime loop.
-pub fn readDifferenceCounts(address: u7) hal.i2c.Error![8]u8 {
-    const start = [1]u8{reg.difference_count_sensor0};
-    var registers: [16]u8 = undefined;
+/// Read a coherent report of all eight difference counts for the runtime loop.
+pub fn readDifferenceCounts(address: u7) (hal.i2c.Error || error{InconsistentReport})![8]u8 {
+    return readDifferenceCountsOnce(address) catch |err| {
+        if (err != error.InconsistentReport) return err;
+        // A sensor update may have crossed the first read. Try one fresh report.
+        return readDifferenceCountsOnce(address);
+    };
+}
+
+fn readDifferenceCountsOnce(address: u7) (hal.i2c.Error || error{InconsistentReport})![8]u8 {
+    const start = [1]u8{reg.sync_counter0};
+    var registers: [17]u8 = undefined;
     try i2c.write_then_read_blocking(@fromBackingInt(address), &start, &registers, .from_ms(2));
+
+    const end = [1]u8{reg.sync_counter1};
+    var end_counter: [1]u8 = undefined;
+    try i2c.write_then_read_blocking(@fromBackingInt(address), &end, &end_counter, .from_ms(2));
+    if ((registers[0] & 0x0f) != (end_counter[0] & 0x0f)) return error.InconsistentReport;
 
     var counts: [8]u8 = undefined;
     // Difference-count registers are two bytes apart; button counts use the low byte.
-    for (&counts, 0..) |*count, sensor| count.* = registers[2 * sensor];
+    for (&counts, 0..) |*count, sensor| count.* = registers[1 + 2 * sensor];
     return counts;
 }
 
@@ -29,24 +43,64 @@ pub fn is3108(self: *Self) bool {
     return device_id == expected_device_id;
 }
 
+/// Set button sensitivity and the shortest Look-for-Touch interval (20 ms).
+/// Save and reset only when the current configuration differs.
+pub fn ensureRuntimeConfiguration(self: *Self, sensitivity: u2) !void {
+    self.last_command_error = null;
+    if (!self.is3108()) return error.NotCY8CMBR3108;
+
+    // Each byte holds the same 2-bit setting for four button sensors.
+    const sensitivity_byte: u8 = @as(u8, sensitivity) * 0x55;
+    const desired_sensitivity = [2]u8{ sensitivity_byte, sensitivity_byte };
+    var current_sensitivity: [2]u8 = undefined;
+    try self.readRegs(reg.sensitivity0, &current_sensitivity);
+    const refresh_ctrl = try self.read8(reg.refresh_ctrl);
+    if (std.mem.eql(u8, &current_sensitivity, &desired_sensitivity) and refresh_ctrl & 0x3f == 1) return;
+
+    if (!std.mem.eql(u8, &current_sensitivity, &desired_sensitivity)) {
+        try self.writeRegs(reg.sensitivity0, &desired_sensitivity);
+    }
+    if (refresh_ctrl & 0x3f != 1) {
+        try self.write8(reg.refresh_ctrl, (refresh_ctrl & 0xc0) | 1);
+    }
+    try self.readRegs(reg.sensitivity0, &current_sensitivity);
+    if (!std.mem.eql(u8, &current_sensitivity, &desired_sensitivity)) return error.SensitivityWriteMismatch;
+    if ((try self.read8(reg.refresh_ctrl)) & 0x3f != 1) return error.RefreshWriteMismatch;
+
+    try self.saveConfiguration();
+    self.resetAndWait();
+
+    if (!self.is3108()) return error.DeviceNotFoundAfterReset;
+    try self.readRegs(reg.sensitivity0, &current_sensitivity);
+    if (!std.mem.eql(u8, &current_sensitivity, &desired_sensitivity)) return error.SensitivityNotSaved;
+    if ((try self.read8(reg.refresh_ctrl)) & 0x3f != 1) return error.RefreshNotSaved;
+}
+
 pub fn changeAddress(self: *Self, to: u7) !void {
     self.last_command_error = null;
     if (try self.read8(reg.i2c_addr) != to) try self.write8(reg.i2c_addr, to);
     if (try self.read8(reg.i2c_addr) != to) return error.AddressWriteMismatch;
 
+    try self.saveConfiguration();
+    self.resetAndWait();
+
+    self.address = to;
+    if (!self.is3108()) return error.NewAddressNotFound;
+    if (try self.read8(reg.i2c_addr) != to) return error.NewAddressMismatch;
+}
+
+fn saveConfiguration(self: *Self) !void {
     try self.command(opcode.calculate_crc);
     var crc: [2]u8 = undefined;
     try self.readRegs(reg.calc_crc, &crc);
     try self.writeRegs(reg.config_crc, &crc);
     try self.command(opcode.save_config);
+}
 
+fn resetAndWait(self: *Self) void {
     // Reset may take effect before the I2C ACK is returned.
     self.write8(reg.ctrl_cmd, opcode.reset) catch {};
     self.sleep_ms(800);
-
-    self.address = to;
-    if (!self.is3108()) return error.NewAddressNotFound;
-    if (try self.read8(reg.i2c_addr) != to) return error.NewAddressMismatch;
 }
 
 fn readRegs(self: *Self, register: u8, dst: []u8) hal.i2c.Error!void {
