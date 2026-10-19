@@ -19,4 +19,10 @@ zig build run-setup
 zig build run
 ```
 
+With sensitivity (0-3):
+
+```
+zig build run -Dsensitivity=N
+```
+
 see: [PROTOCOL.md](./PROTOCOL.md)

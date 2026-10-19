@@ -8,6 +8,7 @@ const MicroBuild = microzig.MicroBuild(.{
 pub fn build(b: *std.Build) void {
     const mz_dep = b.dependency("microzig", .{});
     const mb = MicroBuild.init(b, mz_dep) orelse return;
+    const sensitivity = b.option(u2, "sensitivity", "Touch sensitivity: 0 (highest) to 3 (lowest)") orelse 0;
 
     const firmware = mb.add_firmware(.{
         .name = "v1_firmware",
@@ -15,6 +16,9 @@ pub fn build(b: *std.Build) void {
         .optimize = .ReleaseSmall,
         .root_source_file = b.path("src/main.zig"),
     });
+    const firmware_options = b.addOptions();
+    firmware_options.addOption(u2, "sensitivity", sensitivity);
+    firmware.add_options("build_options", firmware_options);
 
     mb.install_firmware(firmware, .{});
 
