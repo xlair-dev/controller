@@ -14,12 +14,16 @@ comptime {
 }
 
 const pins = hal.pins.GlobalConfiguration{
+    .GPIO21 = .{ .name = "side_button_0", .direction = .in, .pull = .up },
+    .GPIO20 = .{ .name = "side_button_1", .direction = .in, .pull = .up },
+    .GPIO19 = .{ .name = "side_button_2", .direction = .in, .pull = .up },
+    .GPIO18 = .{ .name = "side_button_3", .direction = .in, .pull = .up },
     .GPIO26 = .{ .function = .I2C1_SDA, .pull = .up },
     .GPIO27 = .{ .function = .I2C1_SCL, .pull = .up },
 };
 
 pub fn main() void {
-    _ = pins.apply();
+    const gpio = pins.apply();
     i2c.apply(.{ .clock_config = hal.clock_config, .baud_rate = 400_000 });
 
     port.init();
@@ -49,8 +53,12 @@ pub fn main() void {
             port.poll();
         }
 
-        // Buttons are not connected yet, so all seven button bits are zero.
-        const frame = protocol.encode(sequence, 0, boards);
+        var buttons: u7 = 0;
+        if (gpio.side_button_0.read() == 0) buttons |= 1 << 0;
+        if (gpio.side_button_1.read() == 0) buttons |= 1 << 1;
+        if (gpio.side_button_2.read() == 0) buttons |= 1 << 2;
+        if (gpio.side_button_3.read() == 0) buttons |= 1 << 3;
+        const frame = protocol.encode(sequence, buttons, boards);
         _ = port.trySendPacket(&frame);
         sequence = if (sequence == 254) 0 else sequence + 1;
 
